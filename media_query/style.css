@@ -67,3 +67,44 @@ img{
 }
 
 /* Da qui inizia il mio tentativo di farlo responsive :D */
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+    .row {
+      width: 725px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 100px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .row {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+    }
+
+    #lezioni .row > .left, #lezioni .row > .right{
+      width: 100%;
+      float: none;
+    }
+
+    #steps .row > .left,
+    #steps .row > .central,
+    #steps .row > .right{
+      float: none;
+      width: 100%;
+    }
+
+    #why .row > .first,
+    #why .row > .second,
+    #why .row > .third {
+      width: 100%;
+      margin-top: 80px;
+    }
+
+}
